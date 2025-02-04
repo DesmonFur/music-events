@@ -1,1 +1,24 @@
 /* Add your CSS here. Utilize Tailwind classes or write custom styles to bring your unique design to life. */
+
+.container,
+.grid-container {
+  width: 90%;
+}
+
+@media (min-width: 1250px) {
+  .container,
+  .grid-container {
+    max-width: 60%;
+  }
+}
+
+.grid-container {
+  display: grid;
+  grid-template-rows: repeat(1fr);
+  grid-template-columns: 1fr;
+  row-gap: 1.5rem;
+}
+.event-card {
+  background-color: white;
+  height: 142px;
+}
